@@ -40,17 +40,6 @@ var Gmap = React.createClass({
     			suppressInfoWindows: true,
    			map: map
   		});
-		new google.maps.marker({
-			values:this.props.mark.slice(1).map(function(data){
-				return {
-					latLng: [data.lat, data.lon],
-					data: data.id
-				}
-			}),
-			options:{
-				draggable: false
-			}
-		});
 		return true;
 	},
 	render: function() {
