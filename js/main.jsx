@@ -1,5 +1,7 @@
 "use strict";
 
+var React = require('react/addons');
+
 var gmap = {
   center: [-10.96083, -76.23509],
   urlkml: "http://acastemoreno.me/data/kapaq.kml",
